@@ -1,4 +1,4 @@
-# Manyloris
+# Manyloris 🇺🇦
 **Run Slowloris against multiple targets.**
 
 > Slowloris is a type of denial of service attack tool which allows a single machine to take down another machine's web server with minimal bandwidth and side effects on unrelated services and ports.
