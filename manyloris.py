@@ -31,7 +31,7 @@ def main() -> int:
 	# build the commands for each target
 	build_cmd(targets)
 
-	start = input('\n\nWARNING! The Slowloris commands listed above are going to be executed.\nAre you sure that you want to proceed? (Y/n)\n')
+	start = input('\n\nWARNING! The Slowloris commands listed above are going to be executed.\nAre you sure that you want to proceed with %s targets? (Y/n)\n' % (len(targets)))
 
 	if start.lower() in ['n', 'no']: 
 		return 0
