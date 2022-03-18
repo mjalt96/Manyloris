@@ -12,7 +12,7 @@ Manyloris is a tool that allows to run Slowloris for multiple targets. It receiv
 #### Usage:
 -> You must have Slowloris installed before trying to run Maniloris.
 
-`python3 maniloris [TARGET_LIST]`
+`python3 manyloris [TARGET_LIST]`
 
 **NOTE: The target list must have a target IP per line and follow the syntax** "IP:PORT:PORT:PORT:..."
 
