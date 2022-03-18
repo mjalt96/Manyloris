@@ -10,7 +10,7 @@ https://github.com/gkbrk/slowloris.
 Manyloris is a tool that allows to run Slowloris for multiple targets. It receives a list of targets and ports.
 
 #### Usage:
--> You must have Slowloris installed before trying to run Maniloris.
+-> You must have Slowloris installed before trying to run Manyloris.
 
 `python3 manyloris [TARGET_LIST]`
 
