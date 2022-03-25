@@ -12,7 +12,7 @@ def build_cmd(target_list):
 		ports = aux[1:]
 		ip = aux[0]
 		for p in ports:
-			cmd = 'slowloris ' + ip + ' -s 1300' + ' -p ' + p
+			cmd = 'slowloris ' + ip + ' -p ' + p
 			cmds.append(cmd)
 			print(cmd)
 
