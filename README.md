@@ -22,11 +22,4 @@ Manyloris is a tool that allows to run Slowloris for multiple targets. It receiv
 231.23.522.3:443:80
 141.101.123.30:443
 ```
-#### To improve:
-* Allow stopping the Slowloris processes with a POSIX signal.
-* Support the input of additional arguments.
-* Allow running for a signle target, as well.
-* Have more checks and better deal with exceptions.
-* Allow passing targets in different ways, other than a list.
-* Validate the passed list.
-* Automatically cleaning a list through regex.
+[Future improvements and suggestions](improvements.md).
