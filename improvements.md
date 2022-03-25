@@ -1,4 +1,4 @@
-###Future improvements###
+### Future improvements
 
 The following list contains a suggestion of possible future improvements that the tool could use. Feel free to suggest others or open a PR for any of the changes.
 

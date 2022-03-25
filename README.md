@@ -22,4 +22,6 @@ Manyloris is a tool that allows to run Slowloris for multiple targets. It receiv
 231.23.522.3:443:80
 141.101.123.30:443
 ```
+
+#### Improvements:
 [Future improvements and suggestions](improvements.md).
