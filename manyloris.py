@@ -1,9 +1,12 @@
 import os
-import signal
+
+from signal import signal, SIGINT
+
 import sys
 import time
 
 cmds = []
+prcs = []
 
 
 def build_cmd(target_list):
@@ -16,6 +19,11 @@ def build_cmd(target_list):
 			cmds.append(cmd)
 			print(cmd)
 
+def handler(signal_received, frame):
+	print("Exiting!")
+	for p in prcs:
+		p.close()
+	sys.exit(0)
 
 def terminateProcess(signal, frame):
 	print('(SIGTERM) terminating the processes', signal)
@@ -45,7 +53,13 @@ def main() -> int:
 
     # executing the commands
 	for cmd in cmds:
-		os.popen(cmd)
+		p = os.popen(cmd)
+		prcs.append(p)
+	
+	signal(SIGINT, handler)
+	while True:
+		pass
+	return 0
 
 
 if __name__ == '__main__':
