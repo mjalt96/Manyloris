@@ -2,7 +2,7 @@
 
 The following list contains a suggestion of possible future improvements that the tool could use. Feel free to suggest others or open a PR for any of the changes.
 
-- [x] Allow stopping the Slowloris processes with a POSIX signal. [9af71f](https://github.com/mjalt96/Manyloris/commit/9af71f63800f4a26953c467703a95277e834dd47)
+- [x] Allow stopping the Slowloris processes with a POSIX signal. Kudos to @GdnGeek https://github.com/mjalt96/Manyloris/pull/1
 - [ ] Support the input of additional arguments.
 - [ ] Allow running for a single target, as well.
 - [ ] Have more checks and better deal with exceptions.
